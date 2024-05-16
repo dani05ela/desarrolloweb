@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+}
+p{
+    color: white;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3{
+    color: rgb(0, 0, 128);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+}
+
+#descripcion{
+    color: rgb(0, 128, 255);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#texto{
+    color: rgb(0, 128, 255);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#ventajas{
+    color: rgb(0, 128, 255);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#desventajas{
+    color: rgb(0, 128, 255);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#ve{
+    color: rgb(0, 0, 128);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#de{
+    color: rgb(0, 0, 128);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
