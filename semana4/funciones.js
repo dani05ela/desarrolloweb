@@ -1,3 +1,8 @@
+let valor1 = 0;
+let valor2 = 0;
+let tipo1 = "";
+let tipo2 = "";
+
 document.querySelectorAll('.dropdown-item').forEach(item => {
   item.addEventListener('click', function(event) {
     event.preventDefault();
@@ -25,24 +30,9 @@ function convertir() {
     alert("Por favor, ingrese un valor en uno de los campos.");
     return;
   }
+  console.log(resultado);
 
   document.getElementById("resultado").value = resultado;
-}
-
-function convertirTemperatura(valor, tipoInicial, tipoFinal) {
-  if (tipoInicial === 'celsius' && tipoFinal === 'fahrenheit') {
-    return celsiusToFahrenheit(valor);
-  } else if (tipoInicial === 'fahrenheit' && tipoFinal === 'celsius') {
-    return fahrenheitToCelsius(valor);
-  } else if (tipoInicial === 'kelvin' && tipoFinal === 'celsius') {
-    return kelvinToCelsius(valor);
-  } else if (tipoInicial === 'celsius' && tipoFinal === 'kelvin') {
-    return celsiusToKelvin(valor);
-  } else if (tipoInicial === 'fahrenheit' && tipoFinal === 'kelvin') {
-    return fahrenheitToKelvin(valor);
-  } else if (tipoInicial === 'kelvin' && tipoFinal === 'fahrenheit') {
-    return kelvinToFahrenheit(valor);
-  }
 }
 
 function celsiusToFahrenheit(celsius) {
@@ -67,4 +57,21 @@ function fahrenheitToKelvin(fahrenheit) {
 
 function kelvinToFahrenheit(kelvin) {
   return celsiusToFahrenheit(kelvinToCelsius(kelvin));
+}
+
+
+function convertirTemperatura(valor, tipoInicial, tipoFinal) {
+  if (tipoInicial === 'celsius' && tipoFinal === 'fahrenheit') {
+    return celsiusToFahrenheit(valor);
+  } else if (tipoInicial === 'fahrenheit' && tipoFinal === 'celsius') {
+    return fahrenheitToCelsius(valor);
+  } else if (tipoInicial === 'kelvin' && tipoFinal === 'celsius') {
+    return kelvinToCelsius(valor);
+  } else if (tipoInicial === 'celsius' && tipoFinal === 'kelvin') {
+    return celsiusToKelvin(valor);
+  } else if (tipoInicial === 'fahrenheit' && tipoFinal === 'kelvin') {
+    return fahrenheitToKelvin(valor);
+  } else if (tipoInicial === 'kelvin' && tipoFinal === 'fahrenheit') {
+    return kelvinToFahrenheit(valor);
+  }
 }
