@@ -1,57 +1,63 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    font-size: 10px;
-}
-
-header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #001f3f;
-    color: #ffc0cb;
-    padding: 20px 10px;
-    text-align: center;
-}
-
-h1{
-    font-weight: normal;
-    font-size: 40px;
-}
-
-h2 {
-    font-weight: normal;
-    font-size: 25px;
-}
-
-main {
-    padding: 20px;
-    margin: 0 10px;
-}
-
-article {
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #001f3f;
-    color: #ffc0cb;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 20px;
-}
-
-.tgn-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
 }
+
+header, footer {
+    width: 100%;
+    background-color: #003366; /* Azul oscuro */
+    color: #FFC0CB; /* Rosa pastel */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.converter {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.converter input[type="number"],
+.converter select,
+.converter button,
+.converter input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.converter input[type="text"] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
